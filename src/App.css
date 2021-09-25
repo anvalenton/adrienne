@@ -1,0 +1,279 @@
+.App {
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.outerdiv {
+	width: 100vw;
+	height: 100vh;
+	/* display: flex; */
+}
+
+/* AUDIO CSS */
+audio {
+	width: 25vw;
+	height: 50vh;
+	max-height: 50px;
+	margin-top: 10%;
+	margin-right: 20%;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	audio {
+		margin-top: 0;
+		margin-right: 0;
+		width: 40vw;
+		position: relative;
+		top: 23vh;
+		left: -27vw;
+	}
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+	audio {
+		position: relative;
+		top: 16vh;
+		left: -20vw;
+		width: 35vw;
+	}
+}
+
+/*RUMI CSS */
+
+.svgtext {
+	font-family: 'Cormorant Garamond Bold', serif;
+	color: rgb(102, 37, 155);
+	font-size: 1.5vw;
+}
+#topcurve {
+	width: 60%;
+	height: 80%;
+	position: absolute;
+	transform: translate(23%, 5%);
+}
+
+#svgidtop {
+	position: absolute;
+	top: 61vh;
+	left: 9vw;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	.svgtext {
+		font-size: 3vh;
+	}
+
+	#svgidtop {
+		left: -31vw;
+	}
+}
+
+#svgidbottom {
+	position: absolute;
+	top: 70vh;
+	left: 19vw;
+}
+#bottomcurve {
+	width: 60%;
+	height: 80%;
+	position: absolute;
+	transform: translate(15%, 20%);
+	left: 20vw;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	#svgidbottom {
+		left: -18vw;
+		top: 75vh;
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) and (orientation: portrait) {
+	.svgtext {
+		font-size: 4vw;
+	}
+	#svgidtop {
+		left: -17vw;
+	}
+	#svgidbottom {
+		left: 1vw;
+		top: 79vh;
+	}
+}
+
+.svgouterdive {
+	position: relative;
+}
+
+/* APP - FACE MARKINGS */
+#mouth_x {
+	width: 13%;
+	height: 13%;
+	position: absolute;
+	top: 67%;
+	left: 34%;
+}
+
+@media only screen and (max-width: 767px) {
+	#mouth_x {
+		left: 6vw;
+		top: 65vh;
+		width: 23vw;
+	}
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+	#mouth_x {
+		top: 66vh;
+		left: 19vw;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px) and (orientation: landscape) {
+	#mouth_x {
+		left: 30vw;
+		top: 65vh;
+	}
+}
+
+@media only screen and (min-width: 1216.99px) and (orientation: landscape) {
+	#mouth_x {
+		left: 33vw;
+		top: 65vh;
+	}
+}
+
+/* @media only screen and (min-width: 1500px) and (orientation: landscape) {
+	#mouth_x {
+		left: 33vw;
+		top: 65vh;
+	}
+} */
+
+#mouthxtorightid {
+	stroke-dasharray: 160;
+	stroke-dashoffset: 160;
+	animation: dash 1s linear forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-delay: 7s;
+}
+
+#mouthxtoleftid {
+	stroke-dasharray: 141;
+	stroke-dashoffset: 141;
+	animation: dash 1s linear forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-delay: 9s;
+}
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+#playbuttonsvgid {
+	width: 5%;
+	height: 5%;
+	position: absolute;
+	top: 23%;
+	left: 34%;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	#playbuttonsvgid {
+		width: 20vw;
+		height: 20vw;
+		left: 4vw;
+	}
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+	#playbuttonsvgid {
+		width: 10vw;
+		height: 10vw;
+		left: 15vw;
+	}
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+	#playbuttonsvgid {
+		left: 30vw;
+	}
+}
+
+@media screen and (min-width: 1216px) and (orientation: landscape) {
+	#playbuttonsvgid {
+		left: 35vw;
+	}
+}
+
+#playbuttonpathid {
+	stroke-dasharray: 199;
+	stroke-dashoffset: 199;
+	animation: dash 3s linear forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-delay: 1s;
+}
+
+#eyestrokesid {
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	top: 27%;
+	left: 27%;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	#eyestrokesid {
+		width: 80vw;
+		left: -29vw;
+	}
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+	#eyestrokesid {
+		width: 50vw;
+		left: -1vw;
+		top: 28%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#eyestrokesid {
+		left: 20vw;
+		width: 30vw;
+	}
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+	#eyestrokesid {
+		width: 28vw;
+		left: 25vw;
+	}
+}
+#eyestrokepathid {
+	stroke-dasharray: 1637;
+	stroke-dashoffset: 1637;
+	animation: dash 6s linear forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-delay: 4s;
+}
+
+.markings {
+	transition: stroke .5s ease;
+}
+.markings:hover {
+	stroke: rgb(201, 14, 14);
+}
