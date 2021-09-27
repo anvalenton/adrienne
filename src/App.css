@@ -112,7 +112,6 @@ audio {
 		top: 63vh;
 		
 	}
-
 	#svgidbottom {
 		left: 15vw;
 	}
@@ -121,19 +120,42 @@ audio {
 		#svgidtop {
 			left: 33vw;
 			top: 63vh;
-			
 		}
 
 		#svgidbottom {
 			top: 75vh;
 			left: 33vw;
 		}
-
-
 	  }
 
-	
-	
+}
+
+@media screen and (min-width: 1366px) and (orientation: landscape) {
+
+	#svgidtop {
+		left: 10vw;
+	}
+
+	#svgidbottom {
+		left: 20vw;
+	}
+	.svgtext {
+		font-size: 1vw;;
+	}
+
+	@-moz-document url-prefix() {
+		#svgidtop {
+			left: 33vw;
+			top: 63vh;
+		}
+
+		#svgidbottom {
+			top: 75vh;
+			left: 33vw;
+		}
+	  }
+
+
 }
 
 .svgouterdive {
