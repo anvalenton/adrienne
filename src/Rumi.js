@@ -10,7 +10,7 @@ const Rumi = () => {
     <div>
       <div className="svgouterdiv">
 
-        <svg id='svgidtop' xmlns="http://www.w3.org/2000/svg" viewBox="0 -18 763.03 100">
+        <svg id='svgidtop' xmlns="http://www.w3.org/2000/svg" viewBox="0 -18 763.03 100" >
           
             <path id="topcurve" d="M.49 44.55S9.49.08 71.64.5c78.22.53 181.57 82.07 276.14 44.05 212.8-85.56 415.06-5.09 415.06-5.09"  fill="none"  strokeMiterlimit="10"/>
 
